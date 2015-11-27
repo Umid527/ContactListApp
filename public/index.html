@@ -2,12 +2,33 @@
 <html ng-app>
 <head>
 	<title>Contact List App</title>
+    <link rel="stylesheet" type="text/css" href="Semantic-ui/dist/semantic.css">
+    <script src="Semantic-ui/dist/semantic.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body>
 <h1>Contact List App </h1>
 <input ng-model="test"> {{test}}
 
+
+<div class="ui animated button" tabindex="0">
+  <div class="visible content">Next</div>
+  <div class="hidden content">
+    <i class="right arrow icon"></i>
+  </div>
+</div>
+<div class="ui vertical animated button" tabindex="0">
+  <div class="hidden content">Shop</div>
+  <div class="visible content">
+    <i class="shop icon"></i>
+  </div>
+</div>
+<div class="ui animated fade button" tabindex="0">
+  <div class="visible content">Sign-up for a Pro account</div>
+  <div class="hidden content">
+    $12.99 a month
+  </div>
+</div>
 
 </body>
 </html>
