@@ -37,9 +37,16 @@
       <th>Name</th>
       <th>Email</th>
       <th>Number</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td class="ui small input" ><input ng-model="contact.name"></td>
+      <td class="ui small input" ><input ng-model="contact.email"></td>
+      <td class="ui small input" ><input ng-model="contact.number"></td>
+      <td  ><button class="ui primary button" ng-click="addContact()">Add Contact</button></td>
+    </tr>
     <tr ng-repeat="contact in contactlist">
       <td>{{contact.name}}</td>
       <td>{{contact.email}}</td>
