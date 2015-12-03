@@ -12,24 +12,7 @@
 
 
 <h1 class="ui dividing header">Contact List App </h1>
-<div class="ui animated button" tabindex="0">
-  <div class="visible content">Next</div>
-  <div class="hidden content">
-    <i class="right arrow icon"></i>
-  </div>
-</div>
-<div class="ui vertical animated button" tabindex="0">
-  <div class="hidden content">Shop</div>
-  <div class="visible content">
-    <i class="shop icon"></i>
-  </div>
-</div>
-<div class="ui animated fade button" tabindex="0">
-  <div class="visible content">Sign-up for a Pro account</div>
-  <div class="hidden content">
-    $12.99 a month
-  </div>
-</div>
+
 
 <table class="ui very basic table">
   <thead>
@@ -47,7 +30,7 @@
       <td class="ui small input" ><input ng-model="contact.email"></td>
       <td class="ui small input" ><input ng-model="contact.number"></td>
       <td  ><button class="ui primary button" ng-click="addContact()">Add Contact</button></td>
-      <td  ><button class="ui teal button" ng-click="update()">Update</button></td>
+      <td  ><button class="ui teal button" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="ui teal button" ng-click="deselect()">Clear</button></td>
     </tr>
     <tr ng-repeat="contact in contactlist">
       <td>{{contact.name}}</td>

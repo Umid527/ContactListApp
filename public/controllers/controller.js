@@ -41,4 +41,8 @@ $scope.update = function(){
     })
 };
 
+$scope.deselect = function(){
+    $scope.contact="";
+};
+
 }]);
